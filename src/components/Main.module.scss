@@ -1,0 +1,55 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+
+  &_btn1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+  }
+
+  &_btn2 {
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+
+    &:hover {
+      opacity: 0;
+      cursor: unset;
+    }
+  }
+
+  &_inner {
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &_inner1 {
+    display: none;
+  }
+  &_inner2 {
+    display: flex;
+  }
+}
